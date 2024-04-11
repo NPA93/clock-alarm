@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Training</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <section>
+
+        <div class="alarm-container">
+
+            <h1 class="h1-text">Set Alarm</h1>
+
+            <div class="timer">
+
+                <div class="time-section">
+                    <div onclick="increaseHour()" class="arrow">&#9650;</div>
+                    <input id="input-hours" type="number" class="time-input" value="00">
+                    <div onclick="decreaseHour()" class="arrow">&#9660;</div>
+                </div>
+
+                <div class="separador">:</div>
+
+                <div class="time-section">
+                    <div onclick="increaseMinute()" class="arrow">&#9650;</div>
+                    <input id="input-minutes" type="number" class="time-input" value="00">
+                    <div onclick="decreaseMinute()" class="arrow">&#9660;</div>
+                </div>
+
+            </div>
+
+            <div class="buttons">
+                <button onclick="save()" class="save">Save</button>
+                <button onclick="cancel()" class="cancel">Cancel</button>
+            </div>
+
+            <h3 class="h3-text">My alarms</h3>
+
+            <div id="alarm_set" class="alarm-set" style="display: none;">
+                <h2 id="alarm-set-hours" class="alarm-set-h2">00</h2>
+                <span class="alarm-set-h2">:</span>
+                <h2 id="alarm-set-minutes" class="alarm-set-h2">00</h2>
+            </div>
+        </div>
+
+    </section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
